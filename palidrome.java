@@ -7,17 +7,10 @@ public class palidrome
         System.out.println("Enter a Word:");
         String plag=scar.next();
         char[] letter=plag.toCharArray();
-        int i;
-        int j;
         boolean palidrome=true;
-        for(i=0;i<letter.length;i++)
+        for(int i=0;i<letter.length/2;i++)
         {
-            for( j=letter.length-1-i;letter[j]==letter[i];j--)
-            {
-                
-               break;
-            }
-            if(letter[j]!=letter[i])
+            if(letter[i]!=letter[letter.length-1-i])
             {
                 System.out.println("The word: "+ plag+" is not a palidrome.");
                 palidrome=false;
