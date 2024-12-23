@@ -4,7 +4,6 @@ import java.util.Random;
 {
     int noOfGusses=0;
     int compNumber,userNumber;
-    boolean gussed=false;
     public GuessNumber()
     {
         Random random=new Random();
